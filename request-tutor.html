@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Request a Home Tutor | NS Home Tuition Hyderabad</title>
+
+    <meta name="description" content="Request a home tutor in Hyderabad for LKG to 12th class. NS Home Tuition helps parents find suitable tutors based on class, subject, board and location.">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f7fa;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .topbar {
+            background: #202124;
+            border-bottom: 3px solid #d4af37;
+            color: white;
+        }
+
+        .topbar-inner {
+            max-width: 1200px;
+            margin: auto;
+            padding: 14px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .brand-icon {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #d4af37, #f5d76e);
+            color: #202124;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 21px;
+            font-weight: bold;
+        }
+
+        .brand-text h1 {
+            font-size: 24px;
+        }
+
+        .brand-text p {
+            color: #d4af37;
+            font-size: 11px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .contact-top {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .phone {
+            color: white;
+            font-weight: bold;
+            font-size: 17px;
+        }
+
+        .whatsapp-top {
+            background: #25D366;
+            color: white;
+            padding: 9px 15px;
+            border-radius: 7px;
+            font-weight: bold;
+        }
+
+        nav {
+            background: #202124;
+            border-top: 1px solid #444;
+        }
+
+        .nav-inner {
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            padding: 13px 15px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            background: #333;
+            color: #f5d76e;
+        }
+
+        .page-header {
+            background: linear-gradient(135deg, #eef3f8, #e3eaf1);
+            text-align: center;
+            padding: 55px 20px;
+        }
+
+        .page-header h2 {
+            font-size: 38px;
+            margin-bottom: 12px;
+        }
+
+        .page-header p {
+            max-width: 750px;
+            margin: auto;
+            color: #555;
+            font-size: 17px;
+        }
+
+        .form-section {
+            max-width: 850px;
+            margin: 40px auto 60px;
+            padding: 0 20px;
+        }
+
+        .form-box {
+            background: white;
+            padding: 35px;
+            border-radius: 14px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+        }
+
+        .form-box h3 {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 25px;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 7px;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #ccc;
+            border-radius: 7px;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        textarea {
+            min-height: 110px;
+            resize: vertical;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #0066cc;
+        }
+
+        .submit-btn {
+            width: 100%;
+            background: #0066cc;
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background: #004c99;
+        }
+
+        .whatsapp-note {
+            text-align: center;
+            margin-top: 15px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .info-section {
+            max-width: 1000px;
+            margin: 0 auto 60px;
+            padding: 0 20px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .info-card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        .info-card .icon {
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+
+        .info-card h3 {
+            margin-bottom: 8px;
+        }
+
+        .info-card p {
+            color: #666;
+        }
+
+        .back-home {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .home-btn {
+            display: inline-block;
+            background: #202124;
+            color: white;
+            padding: 12px 22px;
+            border-radius: 7px;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #202124;
+            color: white;
+            text-align: center;
+            padding: 35px 20px 20px;
+        }
+
+        footer h3 {
+            color: #d4af37;
+            margin-bottom: 10px;
+        }
+
+        footer p {
+            color: #ddd;
+        }
+
+        .footer-bottom {
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid #444;
+            color: #aaa;
+            font-size: 13px;
+        }
+
+        @media (max-width: 700px) {
+
+            .topbar-inner {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .brand {
+                justify-content: center;
+            }
+
+            .brand-text h1 {
+                font-size: 21px;
+            }
+
+            .nav-inner {
+                padding: 0 8px;
+            }
+
+            nav a {
+                padding: 9px 7px;
+                font-size: 12px;
+            }
+
+            .page-header h2 {
+                font-size: 30px;
+            }
+
+            .form-box {
+                padding: 22px;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- BRAND HEADER -->
+<header class="topbar">
+
+    <div class="topbar-inner">
+
+        <div class="brand">
+
+            <div class="brand-icon">
+                NS
+            </div>
+
+            <div class="brand-text">
+
+                <h1>NS Home Tuition Hyderabad</h1>
+
+                <p>
+                    TRUSTED HOME TUITION SUPPORT
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="contact-top">
+
+            <a class="phone" href="tel:9505805695">
+                📞 9505805695
+            </a>
+
+            <a class="whatsapp-top"
+               href="https://wa.me/919505805695"
+               target="_blank">
+
+                WhatsApp
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- NAVIGATION -->
+    <nav>
+
+        <div class="nav-inner">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="request-tutor.html">
+                Request Tutor
+            </a>
+
+            <a href="tutor-registration.html">
+                Register as Tutor
+            </a>
+
+            <a href="index.html#classes">
+                Classes
+            </a>
+
+            <a href="index.html#subjects">
+                Subjects
+            </a>
+
+            <a href="index.html#areas">
+                Areas
+            </a>
+
+            <a href="index.html#about">
+                About
+            </a>
+
+            <a href="index.html#contact">
+                Contact
+            </a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<!-- PAGE HEADER -->
+<section class="page-header">
+
+    <h2>
+        Request a Home Tutor
+    </h2>
+
+    <p>
+        Fill in the details below. Your tuition requirement
+        will be sent directly to NS Home Tuition Hyderabad
+        through WhatsApp.
+    </p>
+
+</section>
+
+
+<!-- FORM -->
+<section class="form-section">
+
+    <div class="form-box">
+
+        <h3>
+            Student Tuition Requirement
+        </h3>
+
+
+        <form onsubmit="sendToWhatsApp(); return false;">
+
+            <div class="form-group">
+
+                <label for="parentName">
+                    Parent Name *
+                </label>
+
+                <input
+                    type="text"
+                    id="parentName"
+                    placeholder="Enter parent name"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="phone">
+                    WhatsApp / Phone Number *
+                </label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Enter phone number"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="studentClass">
+                    Student Class *
+                </label>
+
+                <select id="studentClass" required>
+
+                    <option value="">
+                        Select Class
+                    </option>
+
+                    <option>LKG</option>
+                    <option>UKG</option>
+
+                    <option>1st Class</option>
+                    <option>2nd Class</option>
+                    <option>3rd Class</option>
+                    <option>4th Class</option>
+                    <option>5th Class</option>
+
+                    <option>6th Class</option>
+                    <option>7th Class</option>
+                    <option>8th Class</option>
+
+                    <option>9th Class</option>
+                    <option>10th Class</option>
+
+                    <option>11th Class</option>
+                    <option>12th Class</option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="board">
+                    School Board *
+                </label>
+
+                <select id="board" required>
+
+                    <option value="">
+                        Select Board
+                    </option>
+
+                    <option>CBSE</option>
+                    <option>ICSE</option>
+                    <option>Cambridge</option>
+                    <option>State Board</option>
+                    <option>Other</option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="subject">
+                    Subject Required *
+                </label>
+
+                <input
+                    type="text"
+                    id="subject"
+                    placeholder="Example: Mathematics, Science, English"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="location">
+                    Area / Location *
+                </label>
+
+                <input
+                    type="text"
+                    id="location"
+                    placeholder="Example: Nizampet, Bachupally, KPHB"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="days">
+                    Preferred Days
+                </label>
+
+                <input
+                    type="text"
+                    id="days"
+                    placeholder="Example: Monday to Friday">
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="time">
+                    Preferred Time
+                </label>
+
+                <input
+                    type="text"
+                    id="time"
+                    placeholder="Example: 5 PM to 7 PM">
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="tuitionType">
+                    Tuition Type
+                </label>
+
+                <select id="tuitionType">
+
+                    <option value="">
+                        Select Tuition Type
+                    </option>
+
+                    <option>Home Tuition</option>
+                    <option>Online Tuition</option>
+                    <option>Either Home or Online</option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="budget">
+                    Expected Monthly Fee
+                </label>
+
+                <input
+                    type="text"
+                    id="budget"
+                    placeholder="Example: ₹5,000 per month">
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="additional">
+                    Additional Requirements
+                </label>
+
+                <textarea
+                    id="additional"
+                    placeholder="Tell us anything else about the student's requirement"></textarea>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="submit-btn">
+
+                Send Tuition Requirement on WhatsApp
+
+            </button>
+
+
+            <p class="whatsapp-note">
+                Your details will open in WhatsApp
+                and you can send the requirement directly.
+            </p>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- INFORMATION -->
+<section class="info-section">
+
+    <div class="info-grid">
+
+        <div class="info-card">
+
+            <div class="icon">
+                📝
+            </div>
+
+            <h3>
+                1. Send Requirement
+            </h3>
+
+            <p>
+                Tell us what type of tutor you need.
+            </p>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <div class="icon">
+                👨‍🏫
+            </div>
+
+            <h3>
+                2. Tutor Matching
+            </h3>
+
+            <p>
+                We look for a suitable tutor based
+                on your requirement.
+            </p>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <div class="icon">
+                🤝
+            </div>
+
+            <h3>
+                3. Connect
+            </h3>
+
+            <p>
+                We coordinate with the parent and
+                suitable tutor.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- BACK HOME -->
+<div class="back-home">
+
+    <a class="home-btn" href="index.html">
+        ← Back to Home
+    </a>
+
+</div>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <h3>
+        NS Home Tuition Hyderabad
+    </h3>
+
+    <p>
+        📞 9505805695
+    </p>
+
+    <p>
+        Home tuition support for LKG to 12th class
+        students in Hyderabad.
+    </p>
+
+    <div class="footer-bottom">
+
+        © 2026 NS Home Tuition Hyderabad.
+        All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+<script>
+
+function sendToWhatsApp() {
+
+    var parentName =
+        document.getElementById("parentName").value;
+
+    var phone =
+        document.getElementById("phone").value;
+
+    var studentClass =
+        document.getElementById("studentClass").value;
+
+    var board =
+        document.getElementById("board").value;
+
+    var subject =
+        document.getElementById("subject").value;
+
+    var location =
+        document.getElementById("location").value;
+
+    var days =
+        document.getElementById("days").value;
+
+    var time =
+        document.getElementById("time").value;
+
+    var tuitionType =
+        document.getElementById("tuitionType").value;
+
+    var budget =
+        document.getElementById("budget").value;
+
+    var additional =
+        document.getElementById("additional").value;
+
+
+    var message =
+        "🏠 *NEW HOME TUITION REQUIREMENT*" +
+
+        "\n\n" +
+
+        "👤 *Parent Name:* " +
+        parentName +
+
+        "\n📞 *Parent Phone:* " +
+        phone +
+
+        "\n🎓 *Student Class:* " +
+        studentClass +
+
+        "\n📚 *Board:* " +
+        board +
+
+        "\n📖 *Subject:* " +
+        subject +
+
+        "\n📍 *Area:* " +
+        location +
+
+        "\n📅 *Preferred Days:* " +
+        days +
+
+        "\n⏰ *Preferred Time:* " +
+        time +
+
+        "\n🏠 *Tuition Type:* " +
+        tuitionType +
+
+        "\n💰 *Expected Fee:* " +
+        budget +
+
+        "\n📝 *Additional Requirement:* " +
+        additional;
+
+
+    var whatsappURL =
+        "https://wa.me/919505805695?text=" +
+        encodeURIComponent(message);
+
+
+    window.open(
+        whatsappURL,
+        "_blank"
+    );
+
+}
+
+</script>
+
+</body>
+</html>
